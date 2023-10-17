@@ -1,18 +1,20 @@
+package tn.esprit.gestionzoo.main;
+import tn.esprit.gestionzoo.entities.Zoo;
+import tn.esprit.gestionzoo.entities.Animal;
 public class ZooManagement {
-
     public static void main(String[] args) {
         //PROSIT 2
         Animal lion = new Animal();
-        lion.name = "Simba";
-        lion.age = 8;
-        lion.family = "Cats";
-        lion.isMammal = true;
+        lion.setName("Simba"); ;
+        lion.setAge(8);
+        lion.setFamily("Cats");
+        lion.setMammal(true);
 
         Zoo myZoo = new Zoo();
-        myZoo.name = "Wildlife Park";
-        myZoo.city = "Ariana";
-        myZoo.nbrCages = 25;
-        myZoo.animals = new Animal[25];
+        myZoo.setName("Wildlife Park");
+        myZoo.setCity("Ariana");
+        myZoo.setNbrCages(25);
+        myZoo.setAnimals(new Animal[25]);
 
 
         Animal dog = new Animal("Canine", "Snoopy", 2, true);
