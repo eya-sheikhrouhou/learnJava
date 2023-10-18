@@ -8,8 +8,7 @@ public  class Zoo {
 
     private int nbrAnimals;
 
-    public Zoo() {
-    }
+
 
     public Zoo(String name, String city, int nbrCages) {
         animals = new Animal[nbrCages];
@@ -63,7 +62,7 @@ public  class Zoo {
         System.out.println("Name: " + name + ", City: " + city + ", N° Cages/Animals: " + nbrCages);
     }
 
-    boolean addAnimal(Animal animal) {
+    public boolean addAnimal(Animal animal) {
         if  (this.isZooFull()){
             return false;}
         if (nbrAnimals == nbrCages)
@@ -110,7 +109,7 @@ public  class Zoo {
 
 
     public  boolean isZooFull()
-    {if(nbrAnimals == nbrCages || nbrAnimals >= 25)
+    {if(nbrAnimals == nbrCages || nbrAnimals >= nbrCages)
         return true ;//zoo est full
         else
             return false;
