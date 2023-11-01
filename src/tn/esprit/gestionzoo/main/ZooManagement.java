@@ -11,7 +11,7 @@ public class ZooManagement {
         lion.setFamily("Cats");
         lion.setMammal(true);*/
 
-        Zoo myZoo = new Zoo("Wildlife Park","Ariana",25,new Animal[25]);
+        Zoo myZoo = new Zoo("Wildlife Park","Ariana",1,new Animal[1]);
         /*myZoo.setName("Wildlife Park");
         myZoo.setCity("Ariana");
         myZoo.setNbrCages(25);
@@ -22,9 +22,24 @@ public class ZooManagement {
 
         System.out.println(myZoo);
         System.out.println(myZoo.toString());
+        //prosit 7 exception
 
-        System.out.println(myZoo.addAnimal(lion));
-        System.out.println(myZoo.addAnimal(dog));
+       // System.out.println(myZoo.addAnimal(lion));
+        //System.out.println(myZoo.addAnimal(dog));
+
+        try {
+            myZoo.addAnimal(lion);
+            System.out.println("Nombre d'animaux : " + myZoo.getNbrAnimals());
+
+            myZoo.addAnimal(dog);
+            System.out.println("Nombre d'animaux : " +  myZoo.getNbrAnimals());
+
+
+        } catch (ZooFullException e) {
+            System.err.println("Erreur : " + e.getMessage());
+        }catch (InvalidAgeException e) {
+            System.err.println("Erreur d'âge : " + e.getMessage());
+        }
 
        // myZoo.displayAnimals();
 

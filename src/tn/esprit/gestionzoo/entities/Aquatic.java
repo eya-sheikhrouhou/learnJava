@@ -37,7 +37,7 @@ public class Aquatic extends Animal{
             return true;
 
         }
-        return false
+        return false;
         
 
     }
