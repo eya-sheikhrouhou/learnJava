@@ -62,14 +62,27 @@ private  Aquatic[] tabaquatic=new Aquatic[10];
         System.out.println("Name: " + name + ", City: " + city + ", N° Cages/Animals: " + nbrCages);
     }
 
-    public boolean addAnimal(Animal animal) {
-        if  (this.isZooFull()){
-            return false;}
+    /*public void  addAnimal(Animal animal) {
+        //if  (this.isZooFull()){
+            //return false;}
         if (nbrAnimals == nbrCages)
-            return false;
+           // return false;
         animals[nbrAnimals] = animal;
         nbrAnimals++;
-        return true;
+        //return true;
+    }*/
+    public void addAnimal(Animal animal) throws InvalidAgeException {
+
+        if (nbrAnimals == nbrCages) {
+            throw new ZooFullException("Le zoo est plein, impossible d'ajouter plus d'animaux.");
+        }
+        if (animal.getAge() < 0) {
+            throw new InvalidAgeException("Âge négatif non autorisé : " + animal.getAge());
+        }
+
+        animals[nbrAnimals] = animal;
+        nbrAnimals++;
+
     }
 
     boolean removeAnimal(Animal animal) {
