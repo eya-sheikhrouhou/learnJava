@@ -62,14 +62,28 @@ public class ZooManagement {
         System.out.println(penguin);
 
 
-        //prosit 6
+      /*  //prosit 6
         Aquatic bouri =new Aquatic("String family", "String name", 1, true, "String habitat");
         Aquatic nazali =new Aquatic("String family", "String name", 1, true, "String habitat");
         myZoo.addAquaticAnimal(bouri);
         myZoo.addAquaticAnimal(nazali);
-        myZoo.afficherSwim();
+        myZoo.afficherSwim();*/
+
+        ///prosit 8
+        // Création d'un objet Aquatic
+        Aquatic bouri =new Aquatic("String family", "String name", 1, true, "String habitat");
+        System.out.println("Testing Aquatic:");
+      bouri.eatMeat(Food.MEAT);  // Teste la méthode eatMeat de Aquatic
 
 
+      System.out.println("\nTesting Penguin:");
+        penguin.eatMeat(Food.PLANT);  // Teste la méthode eatFish de Penguin
+
+        Terrestrial terrestrial = new Terrestrial();
+        System.out.println("\nTesting Terrestrial:");
+        terrestrial.eatMeat(Food.BOTH);  // Teste la méthode eatMeat de Terrestrial
+        terrestrial.eatPlant(Food.PLANT);  // Teste la méthode eatPlant de Terrestrial
+        terrestrial.eatPlantAndMeat(Food.BOTH);  // Teste la méthode eat
     }
 
 }

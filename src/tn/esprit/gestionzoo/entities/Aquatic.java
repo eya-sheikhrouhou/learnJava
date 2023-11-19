@@ -1,6 +1,6 @@
 package tn.esprit.gestionzoo.entities;
 
-public class Aquatic extends Animal{
+public class Aquatic extends Animal implements Carnivore<Food>{
 
     protected String habitat;
 
@@ -42,4 +42,14 @@ public class Aquatic extends Animal{
 
     }
 
+
+    @Override
+    public void eatMeat(Food food) {
+        if (food == Food.MEAT || food == Food.BOTH) {
+            System.out.println("Aquatic is eating meat");
+        } else {
+            System.out.println("Aquatic does not eat meat");
+        }
+    }
 }
+
