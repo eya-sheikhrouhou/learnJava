@@ -1,4 +1,7 @@
+
+ <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="100" height="100"/>
 # Welcome to My Java Learning Journey! 🚀
+
 
 Hey there! I'm Eya Sheikhrouhou , and I'm on an exciting journey of learning Java. 🌟 This repository is my coding playground, capturing my journey from Java novice to mastering the language.
 
@@ -22,4 +25,4 @@ Hey there! I'm Eya Sheikhrouhou , and I'm on an exciting journey of learning Jav
 
 - 📫 Reach me at [eya.sheikhrouhou@esprit.tn](mailto:eya.sheikhrouhou@esprit.tn)
 
-href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+
